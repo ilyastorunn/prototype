@@ -9,9 +9,11 @@ export default function Header() {
         </Link>
         <nav className="space-x-6 hidden md:block">
           <div className="relative inline-block group">
+            <Link to="/corporate">
             <div className="text-sm text-gray-800 hover:text-red-700 cursor-pointer">
               Corporate
             </div>
+            </Link>
             <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-50"
                  onMouseEnter={(e) => e.currentTarget.classList.add('opacity-100', 'visible')}
                  onMouseLeave={(e) => e.currentTarget.classList.remove('opacity-100', 'visible')}>
